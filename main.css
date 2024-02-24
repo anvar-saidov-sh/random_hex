@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+    --white: #fff;
+    --black: #1c2b2d;
+    --blue: #31326f;
+    --light-blue: #005490;
+    --color-primary: #9d0191;
+    --color-sec: #db6400;
+    --grey: #eee;
+    --dark-grey: #222831;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.counter-div {
+    width: 20rem;
+    border: 1px var(--color-primary) solid;
+    padding: 1rem;
+    background-color: var(--light-blue);
+    border-radius: 10px;
+    color: var(--white);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.counter-div>* {
+    margin-bottom: 2rem;
+}
+
+.number {
+    font-size: 3.2rem;
+    border: 1px solid var(--white);
+    padding: 5px 25px 1px 25px;
+    border-radius: 10px;
+
+}
+
+.buttons .btn {
+    padding: 1rem;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    /* color: var(--white); */
+    font-weight: 700;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons .btn:hover {
+    font-size: 2.3rem;
+}
+
+.buttons .btn:active {
+    font-size: 2.3rem;
+}
+
+button.btn {
+    background-color: var(--color-sec);
+}
+
+button.reset {
+    background-color: var(--grey);
+}
+
+button.add {
+    background-color: var(--color-primary);
+}
+
+.cp_btn {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #31326f;
+    color: #fff;
+    outline: none;
+    outline-offset: 0;
+}
+
+.div {
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #8b73f6, #8b73f6 50%, #000 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+    font-size: 3.2rem;
+    display: inline-block;
+    transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+}
+
+.div::first-letter {
+    color: #8b73f6;
+}
+
+.div:hover {
+    background-position: 0%;
+}
